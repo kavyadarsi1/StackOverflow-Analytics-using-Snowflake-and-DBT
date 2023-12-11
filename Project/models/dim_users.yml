@@ -1,0 +1,19 @@
+version: 2
+models:
+  - name: dim_users
+    description: Users Dimension. One row per user
+    columns:
+      - name: userkey
+        description: The surrogate key of the user
+        tests:
+          - not_null
+          - unique
+      - name: id
+        description: The business / source key of the user
+        tests:
+          - not_null
+          - unique
+    
+              
+              
+          

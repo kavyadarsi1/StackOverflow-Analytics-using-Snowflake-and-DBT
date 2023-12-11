@@ -1,0 +1,15 @@
+version: 2
+models:
+  - name: dim_votes
+    description: Votes Dimension. One row per Votes 
+    columns:
+      - name: votekey
+        description: The surrogate key of the votes
+        tests:
+          - not_null
+          - unique
+      - name: id
+        description: The business / source key of the votes 
+        tests:
+          - not_null
+          - unique

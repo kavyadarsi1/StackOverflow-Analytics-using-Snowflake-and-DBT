@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: obt_Comments
+    description: The fact_comments table connected with Comments and Posts. One row defines the Posts Details and Comment Count

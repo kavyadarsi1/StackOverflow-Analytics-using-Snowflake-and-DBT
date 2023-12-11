@@ -1,0 +1,15 @@
+version: 2
+models:
+  - name: dim_posts
+    description: Posts Dimension. One row per post 
+    columns:
+      - name: postkey
+        description: The surrogate key of the posts
+        tests:
+          - not_null
+          - unique
+      - name: id
+        description: The business / source key of the posts
+        tests:
+          - not_null
+          - unique

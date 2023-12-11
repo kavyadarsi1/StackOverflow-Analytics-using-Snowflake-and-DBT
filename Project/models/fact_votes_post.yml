@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: fact_votes_post
+    description: votes level fact table. Transaction one row per post 
+    columns:
+      - name: votekey
+        description: Dimension key for dim_votes
+      - name: postkey
+        description: Dimension key FK for dim_posts
+      - name: id
+        description: Degnerate Dimension key per votes       
+      - name: BOUNTYAMOUNT
+        description: additive fact for total bountyamount of votes for a posts
+      - name: SCORE
+        description: additive fact for score of votes for a posts
+      - name: VIEWCOUNT
+        description: additive fact for VIEWCOUNT of posts
+      - name: VotetypeId
+        description: Describes the category of vote
+      - name: CreationDateKey
+        description: Dimension FK for dim_date
