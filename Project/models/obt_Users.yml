@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: obt_Users
+    description: The fact_users table connected with Users and Posts. One row defines the User Details and their personal details

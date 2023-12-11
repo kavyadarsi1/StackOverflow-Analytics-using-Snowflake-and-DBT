@@ -1,0 +1,66 @@
+version: 2
+
+sources:
+  - name: conformed
+    database: raw
+    schema: conformed
+
+    tables:
+      - name: DateDimension
+        columns:
+          - name: DateKey
+            tests:
+              - unique
+
+  - name: stackoverflow
+    database: raw
+    schema: stackoverflow
+
+    tables:
+      - name: posts
+        columns:
+          - name: id
+            tests:
+              - unique
+    
+      - name: badges
+        columns:
+          - name: id
+            tests:
+              - unique
+      
+      - name: comments
+        columns:
+          - name: id
+            tests:
+              - unique
+      
+      - name: linktypes
+        columns:
+          - name: id
+            tests:
+              - unique
+      
+      - name: postlinks
+        columns:
+          - name: id
+            tests:
+              - unique
+            
+      - name: users
+        columns:
+          - name: id
+            tests:
+              - unique
+      
+      - name: votes
+        columns:
+          - name: id
+            tests:
+              - unique
+          
+      - name: votetypes
+        columns:
+          - name: id
+            tests:
+              - unique

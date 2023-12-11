@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: fact_users
+    description: users level fact table. One row defines the number of posts by the user 
+    columns:
+      - name: userkey
+        description: Dimension key for dim_users
+      - name: postkey
+        description: Dimension key for dim_posts
+      - name: id
+        description: Degenarate dimension for users      
+      - name: DownVotes
+        description: additive fact for total bountyamount of votes for a posts
+      - name: Upvotes
+        description: additive fact for score of votes for a posts
+      - name: Views
+        description: additive fact for VIEWCOUNT of posts
+      - name: Creationdate
+        description: Creation date of user(Semi additive)
+      - name: LastAccessDate
+        description: Lastaccess date of user(semi additive)
+      
