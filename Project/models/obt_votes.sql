@@ -9,9 +9,9 @@ select
     f.bounty_amount,
     f.post_score,
     f.type_of_vote,
-    dim_date.date as Post_Created_Date
+    dim_date.* 
 from f_votes f
 left join dim_posts on f.post_key = dim_posts.postkey
-left join dim_date on f.creationdatekey = dim_date.datekey
+left join dim_date on f.Post_Created_Date = dim_date.datekey
 order by dim_posts.id
 limit 10000

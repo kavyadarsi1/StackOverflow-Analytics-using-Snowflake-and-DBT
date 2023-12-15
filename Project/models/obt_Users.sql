@@ -16,7 +16,7 @@ select
     f.name,
     f.User_posts_count,
     f.Number_of_days_Active,
-    f.access_as_Badge_Key,
+    f.access_as_Badge_Key  ,
     f.User_Created_Date,
     f.User_Ended_Date,
     dim_date.*
