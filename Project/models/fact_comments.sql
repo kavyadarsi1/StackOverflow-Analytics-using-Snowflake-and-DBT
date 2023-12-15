@@ -49,6 +49,7 @@ select
     text,
     stg_posts.owneruserid,
     comment_created_date
+
 from stg_comments
 join stg_posts on stg_comments.postid = stg_posts.id
 join stg_users on stg_users.id = stg_comments.userid

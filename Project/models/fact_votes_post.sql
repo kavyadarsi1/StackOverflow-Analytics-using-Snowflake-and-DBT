@@ -61,7 +61,7 @@ select
     score as post_score,
     votetypeid as type_of_vote,
     body,
-    creationdatekey,
+    creationdatekey as Post_Created_Date,
     displayname
 from stg_votes v
 join stg_posts p on v.postid = p.id
