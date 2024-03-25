@@ -10,7 +10,9 @@ The objective of this Data Transformation initiative is to utilize Snowflake and
 
 ### Project Phases:
 
-### Data Profiling and Business Processes Identification:  After data profiling and analyzing Stack Overflow's data we come up with 3 business processes to describe about the data
+### Data Profiling and Business Processes Identification:  
+
+-After data profiling and analyzing Stack Overflow's data we come up with 3 business processes to describe about the data
   
 - **Post Quality:** Utilizing our "Vote Types, View Counts" dashboard, we'll track post quality metrics across different formats.
 - **Post Interactions:** Our "Post Interactio s" dashboard will allow us to monitor the engagements of various posts, focusing on comments, types of comments, their score and engagement levels.
